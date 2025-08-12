@@ -1,0 +1,35 @@
+.margin-1{
+    margin: 1rem;
+}
+
+.margin-2{
+    margin: 2rem;
+}
+
+
+.margin-top-1{
+    margin-top: 1rem;
+}
+
+.margin-top-2{
+    margin-top: 2rem;
+}
+
+.margin-top-4{
+    margin-top: 4rem;
+}
+
+
+.margin-block-1{
+    margin-block: 1rem;
+}
+
+.margin-inline-1{
+    margin-inline: 1rem;
+}
+
+/*------------- fleeex ---------------*/
+
+.flex{
+    display: flex;
+}

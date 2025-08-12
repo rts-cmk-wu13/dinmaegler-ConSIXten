@@ -1,14 +1,14 @@
 import { NavLink } from "react-router"
-import './navigation.scss'
+import './navigation.css'
 
 export default function Navigation() {
 
     return (
-        <nav className="navigation">
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/list">List</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
-            
-            </nav>
+        <nav className="">
+            <NavLink to="#">Boliger til salg</NavLink>
+            <NavLink to="#">Mæglere</NavLink>
+            <NavLink to="#">Mine Favoritter</NavLink>
+            <NavLink to="#">Kontakt Os</NavLink>
+        </nav>
     )
 }

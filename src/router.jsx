@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router";
 import Layout from "./Layout";
 import Home from "./pages/Home";
-import List from "./pages/List";
-import Detail from "./pages/Detail";
+import Favoritter from "./pages/Favoritter";
+import Mæglere from "./pages/Mæglere";
 import Contact from "./pages/Contact";
+import Boliger from "./pages/Boliger";
 import NotFound from "./pages/NotFound";
-import { getUser, getUsers } from "./utilities/typicode";
 import Loading from "./Components/Loading";
 import { ErrorBoundary } from "./Components/Error";
 
@@ -21,16 +21,18 @@ const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: "list",
-                element: <List />,
-                loader: getUsers,
+                path: "boliger",
+                element: <Boliger />
             },
-            {
-                path: "list/:id",
-                element: <Detail />,
-                loader: getUser
+             {
+                path: "mæglere",
+                element: <Mæglere />
             },
-            {
+             {
+                path: "favoritter",
+                element: <Favoritter />
+            },
+             {
                 path: "contact",
                 element: <Contact />
             },

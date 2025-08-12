@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+@media screen and (max-width: 37.5rem) {
+    nav a {
+        padding-top: 0.2rem;
+        font-size: 0.80rem;
+    }
+}
+
+nav a:hover {
+    color: #162A41;
+}

@@ -1,5 +1,6 @@
 import Navigation from './Components/Navigation'
 import { Outlet } from 'react-router'
+import Header from './Components/Header/Header'
 
 function App() {
  
@@ -7,8 +8,7 @@ function App() {
   return (
     <>
       <header>
-        <h1>My App</h1>
-        <Navigation />
+        <Header />
       </header>
       <main>
         <Outlet />
