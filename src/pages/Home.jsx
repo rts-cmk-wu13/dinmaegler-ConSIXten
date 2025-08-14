@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router"
 import Hero from "../Components/Hero/Hero"
+import Card from "../Components/Cards/Cards"
 
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+           
         </>
     )
 }
