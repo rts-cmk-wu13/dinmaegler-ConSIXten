@@ -55,3 +55,7 @@ footer>* {
     grid-column: span 3;
 }
 
+.span2{
+    grid-column: span 2;
+}
+

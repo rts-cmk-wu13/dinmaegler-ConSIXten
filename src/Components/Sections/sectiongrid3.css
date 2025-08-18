@@ -1,0 +1,18 @@
+.section-grid-container {
+    display: grid;
+   grid-template-columns: 1fr;
+   gap: 1rem;
+}
+
+@media screen and (width >=37.5rem) {
+    .section-grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (width >=64rem) {
+    .section-grid-container {
+        grid-template-columns:
+            repeat(3, 21.5rem)
+    }
+}
