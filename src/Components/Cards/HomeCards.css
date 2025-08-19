@@ -1,0 +1,131 @@
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 75rem;
+}
+
+@media screen and (max-width: 64rem) {
+    .home-cards {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 37.5rem) {
+    .home-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.home-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-card:hover {
+    transform: translateY(-4px);
+}
+
+.home-card-image {
+    position: relative;
+    height: 200px;
+}
+
+.home-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.energy-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #2C5282;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.home-card-content {
+    padding: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2D3748;
+    margin-bottom: 0.5rem;
+}
+
+.address {
+    font-size: 1.1rem;
+    color: #4A5568;
+    margin-bottom: 0.5rem;
+}
+
+.details {
+    color: #718096;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.property-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.costs {
+    color: #4A5568;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.homes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.show-more-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.show-more-button {
+    background-color: #2C5282;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.show-more-button:hover {
+    background-color: #2A4365;
+}
+
+.homes-container {
+    background-color: #f4f4f4;
+    width: 100%;
+    grid-column: fullw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.show-more-container {
+    margin-top: 2rem;
+    text-align: center;
+}

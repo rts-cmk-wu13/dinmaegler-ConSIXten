@@ -45,3 +45,20 @@
 .flex-column {
     flex-direction: column;
 }
+
+/*------------- Color scale ---------------*/
+
+.section-gray{
+    background-color: gray;
+}
+
+.properties-background {
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+.properties-content {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}

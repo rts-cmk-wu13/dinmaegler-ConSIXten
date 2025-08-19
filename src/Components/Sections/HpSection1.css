@@ -1,0 +1,11 @@
+.section-image{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 37.5rem) {
+    .section-image {
+        width: 100%;
+        height: auto;
+    }
+}

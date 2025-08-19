@@ -7,6 +7,9 @@
     align-items: center;
     color: white;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -69,10 +72,11 @@
 @media screen and (max-width: 37.5rem) {
     .search-container {
         padding: 2rem 5rem;
+        width: 100%;
     }
 }
 
-.search-input {
+.search-input{
     width: 100%;
     padding: 0.5rem 0.5rem;
 }

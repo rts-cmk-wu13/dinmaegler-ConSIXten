@@ -1,11 +1,12 @@
-
+import React from 'react';
+import './HpSection1.css'; // Assuming you have a CSS file for styling
 
 export default function HpSection1() {
     return (
         <>
         <section className="margin-block-2">
                 <div className="half margin-1">
-                    <img src="Image.png" alt="Velkommen" />
+                    <img className="section-image" src="Image.png" alt="Velkommen" />
                 </div>
                 <div className="half margin-2">
                     <h1>Vi har fulgt danskerne hjem i snart 4 årtier</h1>
