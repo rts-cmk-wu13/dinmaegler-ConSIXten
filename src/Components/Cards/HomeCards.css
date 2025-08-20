@@ -1,0 +1,116 @@
+.homes-section {
+    max-width: 87.5rem; /* 1400px */
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.home-cards {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.home-card {
+    border: 0.0625rem solid #e2e8f0; /* 1px */
+    border-radius: 0.5rem; /* 8px */
+    overflow: hidden;
+    transition: transform 0.2s;
+    background: white;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* 2px 4px */
+}
+
+.home-card:hover {
+    transform: translateY(-0.25rem); /* -4px */
+}
+
+.home-card-image {
+    position: relative;
+    height: 12.5rem; /* 200px */
+}
+
+.home-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.energy-label {
+    position: absolute;
+    top: 0.625rem; /* 10px */
+    right: 0.625rem; /* 10px */
+    background: #2C5282;
+    color: white;
+    padding: 0.25rem 0.5rem; /* 4px 8px */
+    border-radius: 0.25rem; /* 4px */
+}
+
+.home-card-content {
+    padding: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2D3748;
+    margin-bottom: 0.5rem;
+}
+
+.address {
+    font-size: 1.1rem;
+    color: #4A5568;
+    margin-bottom: 0.5rem;
+}
+
+.details {
+    color: #718096;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.property-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.costs {
+    color: #4A5568;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.homes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.show-more-container {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.show-more-button {
+    background-color: #2C5282;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.25rem; /* 4px */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.show-more-button:hover {
+    background-color: #2A4365;
+}
+
+
+
+@media screen and (max-width: 37.5rem) { /* 600px */
+    .home-cards {
+        grid-template-columns: 1fr;
+    }
+}
