@@ -5,6 +5,8 @@ import InfoCards from "../Components/Cards/infoCards"
 import SectionGrid3 from "../Components/Sections/SectionGrid3"
 import SectionHeadliner from "../Components/Sections/SectionHeadliner"
 import HomeCards from "../Components/Cards/HomeCards"
+import SectionHero from "../Components/section-hero/SectionHero"
+import AgentCards from "../Components/Cards/AgentCards"
 
 
 export default function Home() {
@@ -16,6 +18,8 @@ export default function Home() {
                 <InfoCards />
             </SectionGrid3>
                 <HomeCards />
+                <SectionHero />
+                <AgentCards />
         </>
     )
 }

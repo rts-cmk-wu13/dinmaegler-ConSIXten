@@ -5,9 +5,9 @@ import InfoCards from '../Cards/infoCards'; // Adjust the path as necessary
 export default function SectionGrid3() {
     return (
         <section className="section-grid-container">
+            {/* <InfoCards />
             <InfoCards />
-            <InfoCards />
-            <InfoCards />
+            <InfoCards /> */}
         </section>
     )
 }

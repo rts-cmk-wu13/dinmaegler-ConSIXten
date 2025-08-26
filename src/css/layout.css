@@ -14,7 +14,7 @@
 @media screen and (width >=64rem) {
     #root {
         grid-template-columns:
-            [fullw-start]1fr [content-start] repeat(6, 10rem) [content-end] 1fr[fullw-end];
+            [fullw-start]1fr [content-start] repeat(3, 20rem) [content-end] 1fr[fullw-end];
     }
 }
 
