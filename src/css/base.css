@@ -9,12 +9,11 @@ img {
     height: auto;
 }
 
-header{
-    height: 10rem;
+li{
+    list-style: none;
 }
 
-
-
-nav{
-    background-color: white;
+.gray-background {
+    background-color: #F8F8FB;
+    height: 100%;
 }

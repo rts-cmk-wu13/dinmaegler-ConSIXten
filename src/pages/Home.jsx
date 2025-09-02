@@ -9,6 +9,8 @@ import SectionHero from "../Components/section-hero/SectionHero"
 import AgentCards from "../Components/Cards/AgentCards"
 
 
+
+
 export default function Home() {
     return (
         <>
@@ -20,6 +22,8 @@ export default function Home() {
                 <HomeCards />
                 <SectionHero />
                 <AgentCards />
+                <SectionHero />
+                
         </>
     )
 }

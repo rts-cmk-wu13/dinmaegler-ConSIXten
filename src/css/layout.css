@@ -59,3 +59,42 @@ footer>* {
     grid-column: span 2;
 }
 
+.grid4{
+    display: grid;
+    grid-template-columns:
+    [fullw-start]1.5rem [content-start] 1fr [content-end] 1.5rem[fullw-end];
+}
+
+@media screen and (width >=37.5rem) {
+    .grid4 {
+        grid-template-columns:
+            [fullw-start]1.5rem [content-start] 1fr 1fr [content-end] 1.5rem[fullw-end];
+    }
+}
+
+@media screen and (width >=64rem) {
+    .grid4 {
+        grid-template-columns:
+            [fullw-start]1fr [content-start] repeat(4, 16rem) [content-end] 1fr[fullw-end];
+    }
+}
+
+.grid5{
+    display: grid;
+    grid-template-columns:
+    [fullw-start]1.5rem [content-start] 1fr [content-end] 1.5rem[fullw-end];
+}
+
+@media screen and (width >=37.5rem) {
+    .grid5 {
+        grid-template-columns:
+            [fullw-start]1.5rem [content-start] 1fr 1fr [content-end] 1.5rem[fullw-end];
+    }
+}
+
+@media screen and (width >=64rem) {
+    .grid5 {
+        grid-template-columns:
+            [fullw-start]1fr [content-start] repeat(5, 12.8rem) [content-end] 1fr[fullw-end];
+    }
+}

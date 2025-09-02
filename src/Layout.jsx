@@ -1,21 +1,18 @@
 import Navigation from './Components/Navigation'
 import { Outlet } from 'react-router'
 import Header from './Components/Header/Header'
+import Footer from './Components/Footer/Footer'
 
 function App() {
  
 
   return (
     <>
-      <header>
         <Header />
-      </header>
       <main>
         <Outlet />
       </main>
-      <footer>
-        <small>© 2023 My App</small>
-      </footer>
+      <Footer />
     </>
   )
 }
