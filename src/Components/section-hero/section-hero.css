@@ -1,0 +1,15 @@
+.section-hero{
+    position: relative;
+    background: rgb(19, 39, 56);
+}
+
+.section-hero_container{
+    color: white;
+    z-index: 1;
+    gap: 1rem;
+}
+
+.section-hero_input{
+    width: 20%;
+    position: absolute;
+}

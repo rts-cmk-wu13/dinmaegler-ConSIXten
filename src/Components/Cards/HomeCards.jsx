@@ -1,29 +1,29 @@
 import React, { useState, useEffect } from 'react';
-import { getHomes } from '../../utilities/realEstateApi';
+
+import { getHomes, } from '../../utilities/realEstateApi';
+import SectionHeadliner from '../Sections/SectionHeadliner';
 import './HomeCards.css';
 
-function getEnergyColor(energyLabel) {
-    switch (energyLabel) {
-        case 'A':
-            return 'green';
-        case 'B':
-            return 'lightgreen';
-        case 'C':
-            return 'yellow';
-        case 'D':
-            return 'orange';
-        case 'E':
-            return 'red';
-        default:
-            return 'gray';
+const getEnergyColor = (label) => {
+    switch (label) {
+        case "A": return "#2ecc71";   // green
+        case "B": return "#27ae60";   // dark green
+        case "C": return "#f1c40f";   // yellow
+        case "D": return "#e67e22";   // orange
+        case "E": return "#e74c3c";   // light red
+        case "F": return "#c0392b";   // red
+        case "G": return "#96281B";   // dark red
+        default: return "#7f8c8d";   // gray fallback
     }
-}
+};
 
 export default function HomeCards() {
     const [homes, setHomes] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [visibleHomes, setVisibleHomes] = useState(4);
+    const [visibleHomes, setVisibleHomes] = useState(6);
+    const initialVisibleHomes = 6;
+
 
     useEffect(() => {
         const fetchHomes = async () => {
@@ -44,11 +44,19 @@ export default function HomeCards() {
         setVisibleHomes(homes.length);
     };
 
+    const handleShowFewer = () => {
+        setVisibleHomes(initialVisibleHomes);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
 
     return (
-        <div className="homes-section">
+
+        <div className="homes-container margin-block-1">
+            <SectionHeadliner />
+
             <div className="home-cards">
                 {homes.slice(0, visibleHomes).map((home) => (
                     <div key={home.id} className="home-card">
@@ -73,15 +81,21 @@ export default function HomeCards() {
                             </div>
                         </div>
                     </div>
+
                 ))}
             </div>
-            {visibleHomes < homes.length && (
-                <div className="show-more-container">
+            <div className="show-more-container">
+                {visibleHomes < homes.length ? (
                     <button onClick={handleShowMore} className="show-more-button">
-                        Vis flere boliger
+                        Se alle boliger
                     </button>
-                </div>
-            )}
+                ) : visibleHomes > initialVisibleHomes && (
+                    <button onClick={handleShowFewer} className="show-more-button">
+                        Vis færre
+                    </button>
+                )}
+            </div>
+
         </div>
     );
 }

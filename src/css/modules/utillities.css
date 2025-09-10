@@ -33,3 +33,53 @@
 .flex{
     display: flex;
 }
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.txt-align-center {
+    text-align: center;
+}
+
+.txt-align-left {
+    text-align: left;
+}
+
+.txt-align-right {
+    text-align: right;
+}
+
+/*------------- Color scale ---------------*/
+
+.section-gray{
+    background-color: gray;
+}
+
+.properties-background {
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+.properties-content {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+
+
+/*--------------- flex ---------------*/
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}

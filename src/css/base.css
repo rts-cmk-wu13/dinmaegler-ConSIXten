@@ -4,15 +4,16 @@
     box-sizing: border-box;
 }
 
-header{
-    height: 10rem;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-footer{
-    height: 5rem;
-    background-color: brown;
+li{
+    list-style: none;
 }
 
-nav{
-    background-color: white;
+.gray-background {
+    background-color: #F8F8FB;
+    height: 100%;
 }
