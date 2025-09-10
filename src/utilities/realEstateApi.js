@@ -6,8 +6,10 @@ export async function getHomes() {
     return response.json();
 }
 
+
 export async function getHome(params) {
     const response = await fetch(`https://dinmaegler.onrender.com/Homes/${params.id}`);
+
     if (!response.ok) {
         throw new Error('Failed to fetch home details');
     }

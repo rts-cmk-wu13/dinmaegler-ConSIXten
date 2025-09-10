@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import { getHomes, } from '../../utilities/realEstateApi';
 import SectionHeadliner from '../Sections/SectionHeadliner';
 import './HomeCards.css';
@@ -22,6 +23,7 @@ export default function HomeCards() {
     const [error, setError] = useState(null);
     const [visibleHomes, setVisibleHomes] = useState(6);
     const initialVisibleHomes = 6;
+
 
     useEffect(() => {
         const fetchHomes = async () => {
@@ -51,8 +53,10 @@ export default function HomeCards() {
     if (error) return <div>Error: {error}</div>;
 
     return (
+
         <div className="homes-container margin-block-1">
             <SectionHeadliner />
+
             <div className="home-cards">
                 {homes.slice(0, visibleHomes).map((home) => (
                     <div key={home.id} className="home-card">
@@ -91,6 +95,7 @@ export default function HomeCards() {
                     </button>
                 )}
             </div>
+
         </div>
     );
 }

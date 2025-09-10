@@ -11,10 +11,12 @@ import AgentCards from "../Components/Cards/AgentCards"
 
 
 
+
 export default function Home() {
     return (
         <>
             <Hero />
+
             <HpSection1 />
             <SectionGrid3>
                 <InfoCards />
