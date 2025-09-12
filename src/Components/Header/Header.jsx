@@ -1,6 +1,8 @@
 import React from 'react';
 import './header.css'; // Assuming you have a CSS file for styling
 import Navigation from '../Navigation'; // Adjust the path as necessary
+import { FaPaperPlane, FaPhone } from 'react-icons/fa';
+
 
 
 const Header = () => {
@@ -8,12 +10,13 @@ const Header = () => {
         <header className='no-columns'>
             <div className="top-header">
                 <div>
-                    <div>
-                        <i className="fa-regular fa-paper-plane"></i>
+                    <div className='flex'>
+                        <FaPaperPlane />
                         <p>4000@dinmaegler.com</p>
                     </div>
-                    <div>
-                        <p>+45 7070 4000</p>
+                    <div className='flex'>
+                        <FaPhone/>
+                        <p> +45 7070 4000</p>
                     </div>
                 </div>
                 <div>

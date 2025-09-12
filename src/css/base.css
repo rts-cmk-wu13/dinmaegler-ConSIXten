@@ -17,3 +17,23 @@ li{
     background-color: #F8F8FB;
     height: 100%;
 }
+
+.grid-columns-1{
+    grid-column: 1;
+}
+
+.grid-columns-2{
+    grid-column: 2;
+}
+
+.grid-columns-3{
+    grid-column: 3;
+}
+
+.grid-columns-4{
+    grid-column: 4;
+}
+
+.span-2-columns{
+    grid-column: span 2;
+}

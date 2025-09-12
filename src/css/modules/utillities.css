@@ -28,6 +28,18 @@
     margin-inline: 1rem;
 }
 
+.margin-inline-2{
+    margin-inline: 2rem;
+}
+
+.margin-inline-3{
+    margin-inline: 3rem;
+}
+
+.margin-inline-4{
+    margin-inline: 4rem;
+}
+
 /*------------- fleeex ---------------*/
 
 .flex{
@@ -83,3 +95,23 @@
     display: flex;
     flex-direction: column;
 }
+
+/*----------------Line height------------------*/
+
+.line-height-1{
+    line-height: 1;
+}
+
+.line-height-2{
+    line-height: 2;
+}
+
+.line-height-3{
+    line-height: 3;
+}
+
+.line-height-4{
+    line-height: 4;
+}
+
+/*------*/
